@@ -12,17 +12,22 @@
 body{
     background-color:white;
     align-items: center;
-    justify-content: center;
-    padding: 20px 62px;
-    max-width:auto;
+    /* justify-content: center; */
+    /* padding: 20px 62px; */
+    max-width: auto;
 }
  
 /* navbar style  */
+
+
 .navbar{
     display:flex;
     justify-content:space-between;
     align-items:center;
     gap: 20px;
+    padding: 20px 40px;
+    position: -webkit-sticky;
+    
 }
 
 .navbar_menu{
@@ -78,10 +83,11 @@ a{
 }
 
 .hero_section{
-    padding:56px;
+    /* padding:56px; */
     align-items: center;
     justify-content: center;
     text-align: center;
+    position: relative;
 }
 
 div h1{
@@ -90,6 +96,7 @@ div h1{
     letter-spacing: 1px;
     margin-top: 32px;
     padding: 0px 100px;
+    
 
 }
 
@@ -117,7 +124,7 @@ div h1{
     /* display: block; */
     text-align: center;
     align-items: center;
-    padding:40px;
+    padding:40px 150px;
     /* margin: 72px; */
     /* margin-top: 52px; */
     /* border: none */
@@ -138,6 +145,7 @@ div h1{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(220px,auto));
     gap: 1rem;
+    padding: 20px 50px;
 
 }
 
@@ -166,7 +174,7 @@ div h1{
     color: rgba(133, 206, 25, 0.952);
 }
     
-@media (max-width: 768px) {
+@media (max-width:768px) {
     .nav_links{
         display:none;
     }
@@ -178,6 +186,7 @@ div h1{
     }
 
     div h1{
+        position: relative;
         font-size: 2rem;
         letter-spacing: 0.5;
         margin-top: 30px;
@@ -185,6 +194,7 @@ div h1{
     }
 
     div p{
+        position: relative;
         padding:0%;
         margin-top: 30px;
         font-size: 0.9rem;
